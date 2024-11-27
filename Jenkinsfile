@@ -41,17 +41,5 @@ pipeline {
                 }
             }
         }
-        stage('Approve to Destroy') { 
-            steps {
-               input message: 'Approve to Destroy', ok: 'Destroy'
-            }
-        }
-        stage('Terraform Destroy') { 
-            steps {
-                script {
-                    sh 'terraform destroy --auto-approve'
-                }
-            }
-        }
     }
 }
