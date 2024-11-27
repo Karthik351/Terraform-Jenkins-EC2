@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout from Git') { 
             steps {
-                git branch: 'prod' , url: 'https://github.com/bkrrajmali/terraform-aws-morning-jenkins.git'
+                git branch: 'main' , url: 'https://github.com/Karthik351/Terraform-Jenkins-EC2.git'
             }
         }
         stage('Terraform version') { 
